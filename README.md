@@ -1,12 +1,16 @@
 
 # Personal Portfolio Website
 
-A responsive personal portfolio website built using HTML, CSS, and JavaScript.
+Welcome to my personal portfolio website!
+
+This project showcases my education, skills, projects, and contact information.
 
 ## Features
-- Home and About sections
-- Education and Skills sections
-- Projects showcase
+- Home section
+- About section
+- Education details
+- Skills showcase
+- Projects section
 - Contact form with JavaScript validation
 - Responsive design
 - Light and dark mode
@@ -18,7 +22,7 @@ A responsive personal portfolio website built using HTML, CSS, and JavaScript.
 
 ## How to Run
 1. Download or clone this repository.
-2. Open the `index.html` file in your browser.
+2. Open `index.html` in your web browser.
 
 ## Author
 Kritika Singh

@@ -1,0 +1,396 @@
+
+/* =================================
+   BURGUNDY CHIC PORTFOLIO THEME
+================================= */
+
+:root {
+    --burgundy: #4A1028;
+    --wine: #8F3153;
+    --rose: #C77B91;
+    --blush: #E8B9C5;
+    --ivory: #FFF7F3;
+    --white: #FFFFFF;
+    --text: #3D2630;
+    --muted: #806A72;
+    --card: #FFFFFF;
+    --border: #F0DDE2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--ivory);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* NAVIGATION */
+
+header {
+    background: rgba(255, 247, 243, 0.96);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+}
+
+.logo {
+    font-size: 28px;
+    color: var(--burgundy);
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: var(--rose);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: var(--wine);
+}
+
+#themeBtn {
+    background: var(--burgundy);
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 90px 10%;
+    scroll-margin-top: 80px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 34px;
+    color: var(--burgundy);
+    margin-bottom: 38px;
+    letter-spacing: -0.5px;
+}
+
+/* HOME */
+
+#home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        radial-gradient(
+            circle at top right,
+            #F1D4DC,
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #FFF7F3,
+            #F7E8EA
+        );
+}
+
+#home h1 {
+    font-size: 52px;
+    color: var(--burgundy);
+    margin-bottom: 12px;
+}
+
+#home h1 span {
+    color: var(--wine);
+}
+
+#home h2 {
+    font-size: 23px;
+    color: var(--wine);
+    margin-bottom: 18px;
+}
+
+#home p {
+    max-width: 620px;
+    color: var(--muted);
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    background: var(--burgundy);
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--wine);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px #4A102833;
+}
+
+/* ABOUT */
+
+#about {
+    background: var(--white);
+}
+
+#about p {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 2;
+}
+
+/* EDUCATION AND PROJECT CARDS */
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 28px;
+    border-radius: 16px;
+    margin: 20px auto;
+    max-width: 750px;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px #4A102808;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: var(--rose);
+    box-shadow: 0 12px 25px #4A102815;
+}
+
+.card h3 {
+    color: var(--wine);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--muted);
+    margin-bottom: 5px;
+}
+
+/* SKILLS */
+
+#skills {
+    background: #F8E9ED;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.skills-container .card {
+    text-align: center;
+    font-weight: 600;
+    color: var(--burgundy);
+    margin: 0;
+}
+
+/* PROJECTS */
+
+#projects {
+    background: var(--white);
+}
+
+/* CONTACT */
+
+#contact {
+    background: #F8E9ED;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-size: 15px;
+    outline: none;
+    font-family: inherit;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: var(--wine);
+    box-shadow: 0 0 0 3px #8F315315;
+}
+
+#contact textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+#contact form button {
+    align-self: flex-start;
+}
+
+#formMessage {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--wine);
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--burgundy);
+    color: var(--blush);
+    text-align: center;
+    padding: 25px;
+}
+
+/* LIGHT MODE */
+
+body.light-mode {
+    background: #FFFFFF;
+    color: var(--text);
+}
+
+/* DARK MODE */
+
+body.dark-mode {
+    --ivory: #1E1017;
+    --white: #29151F;
+    --text: #FFF0F3;
+    --muted: #D1AEBB;
+    --card: #301A25;
+    --border: #553343;
+    --burgundy: #E8B9C5;
+    --wine: #F0A9BF;
+    --rose: #E8B9C5;
+    --blush: #E8B9C5;
+}
+
+body.dark-mode header {
+    background: #29151F;
+}
+
+body.dark-mode .navbar ul li a {
+    color: #FFF0F3;
+}
+
+body.dark-mode #home {
+    background: linear-gradient(135deg, #301A25, #1E1017);
+}
+
+body.dark-mode #skills,
+body.dark-mode #contact {
+    background: #26131D;
+}
+
+body.dark-mode #about,
+body.dark-mode #projects {
+    background: #1E1017;
+}
+
+body.dark-mode #contact input,
+body.dark-mode #contact textarea {
+    background: #301A25;
+    color: white;
+}
+
+body.dark-mode footer {
+    background: #10080D;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+
+    section {
+        padding: 65px 6%;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home h2 {
+        font-size: 19px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+}
